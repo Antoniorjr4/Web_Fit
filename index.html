@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101310"><meta name="description" content="Explore FitΛ, the independent fitness app for iPhone. Starting with Galaxy Fit3, built around the way you move."><title>FitΛ — Fitness in motion</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101310'/%3E%3Cpath d='m10 50 18-37h9l18 37H44L32 24 20 50z' fill='%23c7ff52'/%3E%3C/svg%3E"><link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="./demo.css"><script defer src="./demo.js"></script><script defer src="./site.js"></script></head><body>
+<header><div class="navwrap"><a class="logo" href="#home" aria-label="Fit Lambda">Fit<span>Λ</span></a><nav><a href="#app" data-i>The app</a><a href="#platform" data-i>Platform</a></nav><div class="tools"><label class="lang"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><select id="language" aria-label="Language"><option value="en">EN</option><option value="pt">PT</option><option value="es">ES</option><option value="fr">FR</option><option value="de">DE</option><option value="it">IT</option></select></label><button class="get" data-release data-i>Get FitΛ</button></div></div></header>
+<main><section class="hero" id="home"><div class="hero-photo"></div><div class="hero-inner"><div class="eyebrow"><i></i><span data-i>FITNESS FOR iPHONE</span></div><h1><span data-i>Move with</span><em data-i>purpose.</em></h1><p data-i>Your Galaxy Fit3, connected to iPhone. A closer look at your pulse today, and a new home for your training tomorrow.</p><a class="cta" href="#app"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h5l3-8 4 16 3-8h5"/></svg><span data-i>Explore the app</span></a></div><div class="telemetry"><div class="telhead"><span class="signal"></span><span data-i>HEART RATE</span></div><strong>71 <small>BPM</small></strong><svg viewBox="0 0 175 34" aria-hidden="true"><path d="M0 20h33l4-4 5 5h8l4-9 5 16 5-26 5 30 6-13h16l3-3 6 4h25l6-5 5 6h39"/></svg><span data-i>Fit3 sample reading</span></div><div class="herobottom"><span>FitΛ <b>/</b> <span>GALAXY FIT3 × iPHONE</span></span><span class="scroll"><i></i><span data-i>Scroll to explore</span></span></div></section>
+<section id="app" class="fit-demo" aria-labelledby="demo-title">
+  <div class="fd-inner">
+    <div class="fd-story">
+      <p class="fd-kicker"><span class="fd-mark" aria-hidden="true"></span><span data-i>THE APP</span></p>
+      <h2 id="demo-title" data-i>Your wrist, in focus.</h2>
+      <p class="fd-body" data-i>Explore a snapshot from a Galaxy Fit3 on iPhone. Select a reading to see how it appears in FitΛ.</p>
+      <div class="fd-choices" role="group" aria-label="Preview readings">
+        <button type="button" data-reading="heart" aria-pressed="true" aria-controls="fd-display"><i class="fd-icon fd-heart" aria-hidden="true">♥</i><span data-i>Heart rate</span><i class="fd-check" aria-hidden="true"></i></button>
+        <button type="button" data-reading="battery" aria-pressed="false" aria-controls="fd-display"><i class="fd-icon fd-cell" aria-hidden="true"></i><span data-i>Band battery</span><i class="fd-check" aria-hidden="true"></i></button>
+        <button type="button" data-reading="signal" aria-pressed="false" aria-controls="fd-display"><i class="fd-icon fd-bars" aria-hidden="true"><b></b><b></b><b></b></i><span data-i>Bluetooth signal</span><i class="fd-check" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <div class="fd-stage">
+      <div class="fd-phone">
+        <div class="fd-speaker" aria-hidden="true"></div>
+        <div class="fd-top"><b>FitΛ</b><span>Galaxy Fit3</span></div>
+        <div class="fd-screen" id="fd-display" aria-live="polite" aria-atomic="true">
+          <div class="fd-result" data-view="heart">
+            <p class="fd-label" data-i>Heart rate</p>
+            <div class="fd-gauge"><span class="fd-sigil fd-heart" aria-hidden="true">♥</span><div><b>71</b><small>bpm</small></div></div>
+          </div>
+          <div class="fd-result" data-view="battery" hidden>
+            <p class="fd-label" data-i>Band battery</p>
+            <div class="fd-gauge"><span class="fd-sigil fd-cell" aria-hidden="true"></span><div><b>98</b><small>%</small></div></div>
+          </div>
+          <div class="fd-result" data-view="signal" hidden>
+            <p class="fd-label" data-i>Bluetooth signal</p>
+            <div class="fd-gauge"><span class="fd-sigil fd-bars" aria-hidden="true"><b></b><b></b><b></b></span><div><b>−49</b><small>dBm</small></div></div>
+          </div>
+        </div>
+        <div class="fd-source"><span data-i>Sample capture</span><b>13:45 UTC</b></div>
+        <div class="fd-home" aria-hidden="true"></div>
+      </div>
+      <p class="fd-caption"><span aria-hidden="true">✳</span> <span data-i>Interactive product preview</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="platform" id="platform"><div class="platformintro"><div class="eyebrow"><i></i><span data-i>THE PLATFORM</span></div><h2><span data-i>Beyond the</span> <em data-i>band.</em></h2><p data-i>Galaxy Fit3 is our first integration. We’re designing FitΛ around the person wearing it, with room to train and track progress with or without a band.</p></div><div class="road">
+<details open><summary><span data-i>Connected wearables</span><small data-i>In testing</small></summary><p data-i>Physical iPhone tests cover heart rate, battery, incoming call alerts and first-time Fit3 setup. Step syncing is implemented and awaits testing on the band.</p></details>
+<details><summary><span data-i>Training journal</span><small data-i>Planned</small></summary><p data-i>A place to log sessions, revisit workouts and follow your training history, even on days you leave your band at home.</p></details>
+<details><summary><span data-i>Body composition</span><small data-i>Planned</small></summary><p data-i>Track changes over time using measurements from a compatible scale, including bioimpedance where supported.</p></details></div></section></main>
+<footer><a class="logo" href="#home">Fit<span>Λ</span></a><span data-i>Independent fitness software for iPhone.</span><button data-release data-i>App Store availability</button></footer>
+<dialog id="release" aria-labelledby="release-title"><button id="close" aria-label="Close">×</button><div class="eyebrow"><i></i>FitΛ / iOS</div><h2 id="release-title" data-i>Get FitΛ</h2><p data-i>The iPhone app is in development. The official App Store link will appear here when FitΛ is available.</p><button class="get" id="back" data-i>Back to the site</button></dialog>
+</body></html>
